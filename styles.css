@@ -461,6 +461,12 @@ h3 {
   font-size: 1.15rem;
 }
 
+.callout strong a,
+.zlhc-callout h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .commitment p,
 .callout p {
   margin: 10px 0 0;
