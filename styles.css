@@ -735,7 +735,7 @@ details a {
   display: block;
   width: 135%;
   height: 1120px;
-  margin-top: -60px;
+  margin-top: -90px;
   margin-left: clamp(5px, 3vw, 55px);
   border: 0;
   transform: scale(0.8);
