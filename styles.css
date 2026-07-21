@@ -350,6 +350,13 @@ p {
   align-items: center;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.58fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+}
+
 h2 {
   margin: 0;
   color: var(--blue-950);
@@ -374,14 +381,17 @@ h3 {
 }
 
 .mission-panel,
+.about-highlight,
 .commitment,
 .callout,
-.contact-card {
+.contact-card,
+.clarity-card {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
-.mission-panel {
+.mission-panel,
+.about-highlight {
   padding: clamp(24px, 4vw, 38px);
   color: var(--white);
   background:
@@ -396,6 +406,14 @@ h3 {
   font-family: "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, sans-serif;
   font-weight: 700;
   font-size: 1.35rem;
+  line-height: 1.45;
+}
+
+.about-highlight p {
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  font-weight: 800;
   line-height: 1.45;
 }
 
@@ -416,6 +434,10 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
+}
+
+.about-feature-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .feature-grid article,
@@ -478,6 +500,46 @@ h3 {
 .values-grid article {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(240, 179, 61, 0.42);
+}
+
+.statement-band {
+  padding: clamp(54px, 8vw, 88px) clamp(18px, 5vw, 72px);
+  background:
+    linear-gradient(90deg, rgba(7, 84, 187, 0.12), transparent 20%, transparent 80%, rgba(7, 84, 187, 0.12)),
+    var(--gold-100);
+  border-top: 4px solid var(--gold-600);
+  border-bottom: 4px solid var(--gold-600);
+}
+
+.statement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(22px, 4vw, 42px);
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.statement-grid article {
+  padding: clamp(24px, 4vw, 34px);
+  background: var(--white);
+  border: 2px solid rgba(216, 144, 16, 0.5);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 24px rgba(6, 31, 85, 0.08);
+}
+
+.about-values {
+  margin-top: 0;
+}
+
+.clarity-section {
+  padding-top: clamp(46px, 7vw, 74px);
+}
+
+.clarity-card {
+  padding: clamp(24px, 4vw, 38px);
+  background: var(--white);
+  border: 2px solid var(--gold-500);
+  border-left-width: 8px;
 }
 
 .parent-band {
@@ -656,6 +718,42 @@ details a {
   text-underline-offset: 3px;
 }
 
+.calendar-section {
+  padding-top: clamp(48px, 7vw, 78px);
+}
+
+.calendar-frame {
+  overflow: hidden;
+  min-height: 680px;
+  background: var(--white);
+  border: 3px solid var(--gold-500);
+  border-bottom: 8px solid var(--blue-900);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.calendar-frame iframe {
+  display: block;
+  width: 100%;
+  min-height: 680px;
+  border: 0;
+}
+
+.calendar-placeholder {
+  display: grid;
+  min-height: 680px;
+  place-content: center;
+  padding: clamp(24px, 5vw, 52px);
+  text-align: center;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(18, 105, 209, 0.12), transparent 24%),
+    linear-gradient(180deg, #ffffff, #f5f9ff);
+}
+
+.calendar-placeholder h3 {
+  font-size: clamp(1.45rem, 2.8vw, 2.4rem);
+}
+
 .contact-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.55fr);
@@ -732,7 +830,9 @@ details a {
 
   .hero-content,
   .enrollment-layout,
-  .faq-layout {
+  .faq-layout,
+  .about-grid,
+  .statement-grid {
     grid-template-columns: 1fr;
   }
 
