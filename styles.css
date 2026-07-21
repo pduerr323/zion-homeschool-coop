@@ -724,7 +724,7 @@ details a {
 
 .calendar-frame {
   overflow: hidden;
-  height: 880px;
+  height: 820px;
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -735,8 +735,9 @@ details a {
   display: block;
   width: 125%;
   height: 1100px;
+  margin-top: -34px;
   margin-left: clamp(20px, 4vw, 70px);
-  boarder: 0;
+  border: 0;
   transform: scale(0.8);
   transform-origin: top left;
 }
