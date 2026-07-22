@@ -718,15 +718,26 @@ details a {
   text-underline-offset: 3px;
 }
 
-.calendar-section .section-heading {
-  max-width: none;
-  text-align: center;
-
 .calendar-section {
-  width: 100%;
+  width: 100vw;
   max-width: none;
-  padding-top: clamp(48px, 7vw, 78px) 0 0;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: clamp(48px, 7vw, 78px) 0 0;
   background: #ffffff;
+}
+
+.calendar-section .section-heading {
+  width: min(1120px, calc(100% - 36px));
+  max-width: none;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.calendar-section .section-heading p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .calendar-frame {
