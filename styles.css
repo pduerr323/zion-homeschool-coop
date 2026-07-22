@@ -719,7 +719,9 @@ details a {
 }
 
 .calendar-section {
-  padding-top: clamp(48px, 7vw, 78px);
+  width: 100%;
+  max-width: none;
+  padding-top: clamp(48px, 7vw, 78px) 0 0;
   background: #ffffff;
 }
 
