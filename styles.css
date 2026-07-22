@@ -718,6 +718,10 @@ details a {
   text-underline-offset: 3px;
 }
 
+.calendar-section .section-heading {
+  max-width: none;
+  text-align: center;
+
 .calendar-section {
   width: 100%;
   max-width: none;
