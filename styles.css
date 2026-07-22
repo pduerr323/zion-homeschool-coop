@@ -720,6 +720,7 @@ details a {
 
 .calendar-section {
   padding-top: clamp(48px, 7vw, 78px);
+  background: #ffffff;
 }
 
 .calendar-frame {
