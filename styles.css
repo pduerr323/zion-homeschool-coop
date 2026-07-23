@@ -765,7 +765,7 @@ details a {
   margin-left: -10px;
   border: 0;
   transform: none;
-  transform-origin: top center;
+  transform-origin: top left;
 }
 
 .calendar-placeholder {
