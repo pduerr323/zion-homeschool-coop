@@ -759,11 +759,11 @@ details a {
 
 .calendar-frame iframe {
   display: block;
-  width: 135%;
+  width: 150%;
   height: 1120px;
   margin-top: -94px;
   border: 0;
-  transform: translateX(-2px) scale(0.75);
+  transform: translateX(-5px) scale(0.75);
   transform-origin: top center;
 }
 
