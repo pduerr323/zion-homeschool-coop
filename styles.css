@@ -762,8 +762,9 @@ details a {
   width: 150%;
   height: 1120px;
   margin-top: -94px;
+  margin-left: -3px;
   border: 0;
-  transform: translateX(-5px) scale(0.75);
+  transform: scale(0.8);
   transform-origin: top center;
 }
 
